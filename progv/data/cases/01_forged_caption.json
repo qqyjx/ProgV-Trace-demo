@@ -1,0 +1,91 @@
+{
+  "id": "toy-forged-caption",
+  "synthetic": true,
+  "title": "Breaking: floods hit Marlow City on 2023-03-14",
+  "ocr": [
+    {
+      "t0": 0.0,
+      "t1": 20.0,
+      "text": "Port Alder Harbour Cam 2"
+    }
+  ],
+  "frames": [
+    {
+      "id": "f1",
+      "t0": 0.0,
+      "t1": 20.0,
+      "visual": {
+        "event": "flood",
+        "landmark": "harbour crane"
+      }
+    }
+  ],
+  "speech": [
+    {
+      "id": "s1",
+      "t0": 2.0,
+      "t1": 8.0,
+      "text": "The water is rising along the harbour road."
+    },
+    {
+      "id": "s2",
+      "t0": 9.0,
+      "t1": 16.0,
+      "text": "Crews are moving people to higher ground."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev1",
+      "type": "reverse_image",
+      "source": "Port Alder Gazette (synthetic)",
+      "queries": [
+        "frame:f1"
+      ],
+      "text": "Harbour road flooding in Port Alder, 2023-03-14",
+      "facts": {
+        "location": "Port Alder",
+        "time": "2023-03-14",
+        "event": "flood"
+      }
+    },
+    {
+      "id": "ev2",
+      "type": "fact_check",
+      "source": "Toy Fact Desk (synthetic)",
+      "queries": [
+        "title"
+      ],
+      "text": "The flood video was filmed at a harbour, not in the city named in the caption.",
+      "facts": {
+        "event": "flood"
+      }
+    },
+    {
+      "id": "ev3",
+      "type": "news",
+      "source": "Port Alder Gazette transcript (synthetic)",
+      "queries": [
+        "speech"
+      ],
+      "text": "Broadcast transcript of the harbour report.",
+      "quotes": [
+        {
+          "t0": 2.0,
+          "t1": 8.0,
+          "text": "The water is rising along the harbour road."
+        },
+        {
+          "t0": 9.0,
+          "t1": 16.0,
+          "text": "Crews are moving people to higher ground."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "manipulation": [
+      "title.location"
+    ]
+  }
+}

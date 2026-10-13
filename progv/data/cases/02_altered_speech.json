@@ -1,0 +1,102 @@
+{
+  "id": "toy-altered-speech",
+  "synthetic": true,
+  "title": "Mayor Hale speaks at the Dunmere press conference on 2024-05-02",
+  "ocr": [
+    {
+      "t0": 0.0,
+      "t1": 20.0,
+      "text": "Dunmere Council Live"
+    }
+  ],
+  "frames": [
+    {
+      "id": "f1",
+      "t0": 0.0,
+      "t1": 20.0,
+      "visual": {
+        "event": "press conference",
+        "landmark": "council podium"
+      }
+    }
+  ],
+  "speech": [
+    {
+      "id": "s1",
+      "t0": 1.0,
+      "t1": 6.0,
+      "text": "Good evening, the river level is stable."
+    },
+    {
+      "id": "s2",
+      "t0": 7.0,
+      "t1": 13.0,
+      "text": "We will open the dam gates tonight."
+    },
+    {
+      "id": "s3",
+      "t0": 14.0,
+      "t1": 19.0,
+      "text": "Updates follow at nine o'clock."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev1",
+      "type": "reverse_image",
+      "source": "Dunmere Courier (synthetic)",
+      "queries": [
+        "frame:f1"
+      ],
+      "text": "Mayor at the Dunmere council podium, 2024-05-02",
+      "facts": {
+        "location": "Dunmere",
+        "time": "2024-05-02",
+        "event": "press conference"
+      }
+    },
+    {
+      "id": "ev2",
+      "type": "fact_check",
+      "source": "Toy Fact Desk (synthetic)",
+      "queries": [
+        "title"
+      ],
+      "text": "The press conference took place as described; the speech was edited afterwards.",
+      "facts": {
+        "event": "press conference"
+      }
+    },
+    {
+      "id": "ev3",
+      "type": "news",
+      "source": "Dunmere Council official transcript (synthetic)",
+      "queries": [
+        "speech"
+      ],
+      "text": "Official transcript of the press conference.",
+      "quotes": [
+        {
+          "t0": 1.0,
+          "t1": 6.0,
+          "text": "Good evening, the river level is stable."
+        },
+        {
+          "t0": 7.0,
+          "t1": 13.0,
+          "text": "We will not open the dam gates tonight."
+        },
+        {
+          "t0": 14.0,
+          "t1": 19.0,
+          "text": "Updates follow at nine o'clock."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "manipulation": [
+      "speech.s2"
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "toy-authentic-control",
+  "synthetic": true,
+  "title": "Storm warning issued for Saltwick on 2022-11-03",
+  "ocr": [
+    {
+      "t0": 0.0,
+      "t1": 14.0,
+      "text": "Saltwick Weather Desk"
+    }
+  ],
+  "frames": [
+    {
+      "id": "f1",
+      "t0": 0.0,
+      "t1": 14.0,
+      "visual": {
+        "event": "storm",
+        "landmark": "coastal radar"
+      }
+    }
+  ],
+  "speech": [
+    {
+      "id": "s1",
+      "t0": 1.0,
+      "t1": 6.0,
+      "text": "Heavy rain is expected through the night."
+    },
+    {
+      "id": "s2",
+      "t0": 7.0,
+      "t1": 12.0,
+      "text": "Residents should avoid the lower road."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev1",
+      "type": "reverse_image",
+      "source": "Saltwick Post (synthetic)",
+      "queries": [
+        "frame:f1"
+      ],
+      "text": "Weather desk broadcast, Saltwick, 2022-11-03",
+      "facts": {
+        "location": "Saltwick",
+        "time": "2022-11-03",
+        "event": "storm"
+      }
+    },
+    {
+      "id": "ev2",
+      "type": "fact_check",
+      "source": "Toy Fact Desk (synthetic)",
+      "queries": [
+        "title"
+      ],
+      "text": "No inconsistency found.",
+      "facts": {
+        "event": "storm"
+      }
+    },
+    {
+      "id": "ev3",
+      "type": "news",
+      "source": "Saltwick Post transcript (synthetic)",
+      "queries": [
+        "speech"
+      ],
+      "text": "Transcript of the weather bulletin.",
+      "quotes": [
+        {
+          "t0": 1.0,
+          "t1": 6.0,
+          "text": "Heavy rain is expected through the night."
+        },
+        {
+          "t0": 7.0,
+          "t1": 12.0,
+          "text": "Residents should avoid the lower road."
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "manipulation": []
+  }
+}
